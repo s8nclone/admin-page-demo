@@ -49,7 +49,6 @@ body {
 }
 .navigation ul li a {
   position: relative;
-  display: block;
   width: 100%;
   display: flex;
   text-decoration: none;
@@ -161,6 +160,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+}
+@media screen and (max-width: 425px) {
+  .main .top_cardbox {
+    display: block;
+    width: 100%;
+  }
 }
 .main .top_cardbox .cards {
   position: relative;
@@ -318,6 +323,64 @@ body {
 }
 .main .crop_details .recentCustomer table tr:hover td h4 span {
   color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation.active {
+    width: 300px;
+    left: 0;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 300px;
+  }
+  .top_cardbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .crop_details {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.progress {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 428px) {
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+  .top_user_profile {
+    min-width: 40px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+    overflow-x: clip;
+  }
+  .hamburger_menu {
+    z-index: 10001;
+  }
+  .main.active .hamburger_menu {
+    color: #ffffff;
+    position: fixed;
+    right: 0;
+    left: initial;
+  }
 }
 
 /*# sourceMappingURL=admin.css.map */
