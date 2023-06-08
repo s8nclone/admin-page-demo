@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/person-circle-outline.svg" type="image/x-icon">
+    <title>Admin Page Demo</title>
+
+    <link rel="stylesheet" href="./stylesheet/admin.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="bonfire-outline"></ion-icon></span>
+                        <span class="title">Agro & Farmers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="fitness-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <!-- ========== topbar section ========== -->
+
+            <section class="main_topbar">
+                <div class="hamburger_menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label for="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="search...">
+                    </label>
+                </div>
+
+                <div class="top_user_profile">
+                    <ion-icon name="happy-outline"></ion-icon>
+                </div>
+            </section>
+
+
+            <!-- ========== statistics card ========== -->
+
+            <section class="top_cardbox">
+                <div class="cards">
+                    <div class="card_content">
+                        <div class="figures">$60M</div>
+                        <div class="cardName">In funding</div>
+                    </div>
+
+                    <div class="iconBox">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card_content">
+                        <div class="figures">10,127</div>
+                        <div class="cardName">Farmers</div>
+                    </div>
+
+                    <div class="iconBox">
+                        <ion-icon name="walk-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card_content">
+                        <div class="figures">$1M+</div>
+                        <div class="cardName">Total sales</div>
+                    </div>
+
+                    <div class="iconBox">
+                        <ion-icon name="bar-chart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card_content">
+                        <div class="figures">349</div>
+                        <div class="cardName">Customers</div>
+                    </div>
+
+                    <div class="iconBox">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== farm crops section ========== -->
+            <section class="crop_details">
+                <article class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">view all</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Quantity</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rice</td>
+                                <td>70 Tons</td>
+                                <td>$12,000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Maize</td>
+                                <td>40 Tons</td>
+                                <td>$8,420</td>
+                                <td>Due</td>
+                                <td><span class="status progress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Millet</td>
+                                <td>25 Tons</td>
+                                <td>$7,970</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Sorghum</td>
+                                <td>14 Tons</td>
+                                <td>$5,880</td>
+                                <td>Paid</td>
+                                <td><span class="status returned">Returned</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Cassava</td>
+                                <td>34 Tons</td>
+                                <td>$11,700</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Rice</td>
+                                <td>70 Tons</td>
+                                <td>$12,000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Maize</td>
+                                <td>40 Tons</td>
+                                <td>$8,420</td>
+                                <td>Due</td>
+                                <td><span class="status progress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Millet</td>
+                                <td>25 Tons</td>
+                                <td>$7,970</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Sorghum</td>
+                                <td>14 Tons</td>
+                                <td>$5,880</td>
+                                <td>Paid</td>
+                                <td><span class="status returned">Returned</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Cassava</td>
+                                <td>34 Tons</td>
+                                <td>$11,700</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </article>
+
+                <!-- ========== customers box ========== -->
+
+                <aside class="recentCustomer">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="body-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Caleb <br> <span>Nigeria</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="woman-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Amina <br> <span>Nigeria</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="body-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Curry <br> <span>Botswana</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="body-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Robben <br> <span>Madagascar</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="woman-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Anita <br> <span>Ghana</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="woman-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Caroline <br> <span>Kenya</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="body-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Adams <br> <span>Nigeria</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><ion-icon name="woman-outline"></ion-icon></div>
+                            </td>
+                            <td>
+                                <h4>Katherine <br> <span>Algeria</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </aside>
+            </section>
+        </section>
+    </div>
+
+
+    <script src="admin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
